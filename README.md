@@ -42,3 +42,13 @@ Inside the frontend folder, install the packages/dependencies with command on te
 Run the Frontend App with command on terminal: `yarn start`
 
 Warning, currently only two users have been mocked. They have userId 12 and 18 respectively.
+
+# 2. Documents:
+
+App Figma mockup: https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR
+
+Kanban Notion: https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e
+
+Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+
+
