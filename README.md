@@ -14,11 +14,13 @@ React Version 18.0.0
 
 React-router-dom 
 
-JSDoc
+JSDoc ( to generate API documentation)
+
+Recharts ?
 
 Prop-types ?
 
-Recharts ?
+Styled-Components ?
 
 
 ## 1.2 Clone or download P12 repository
