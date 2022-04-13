@@ -1,5 +1,5 @@
 
-# 1. Project 
+# 1. Project: installation steps
 
 ## 1.1 Prerequisites
 
