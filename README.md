@@ -39,7 +39,7 @@ You will see the message Magic happens on port 3000 in the terminal window.
 
 Inside the frontend folder, install the packages/dependencies with command on terminal: `yarn`
 
-Run the Frontend App with command on terminal: `yarn start`
+Run the Frontend App with command on terminal: `yarn dev`
 
 Warning, currently only two users have been mocked. They have userId 12 and 18 respectively.
 
