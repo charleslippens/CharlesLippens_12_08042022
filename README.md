@@ -11,8 +11,11 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 ## 1.1.2 Dependencies
 
 React Version 18.0.0
+
 React-router-dom 
+
 Prop-types ?
+
 Recharts ?
 
 
