@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../services/context.jsx";
 
-import Card from "../components/card.jsx";
+import AsideCard from "../components/asidecard.jsx";
 
 import energy from "../assets/energy.svg";
 import chicken from "../assets/chicken.svg";
@@ -44,28 +44,28 @@ function Dashboard() {
 					</p>
 					<div className="dashboard">
 						<div className="dashboard-aside">
-							<Card
+							<AsideCard
 								userKeyData={user.keyData.calorieCount}
 								unit="kCal"
 								subtitle="Calories"
 								className="calorie"
 								logo={energy}
 							/>
-							<Card
+							<AsideCard
 								userKeyData={user.keyData.proteinCount}
 								unit="g"
 								subtitle="Proteines"
 								className="protein"
 								logo={chicken}
 							/>
-							<Card
+							<AsideCard
 								userKeyData={user.keyData.carbohydrateCount}
 								unit="g"
 								subtitle="Glucides"
 								className="carbohydrate"
 								logo={apple}
 							/>
-							<Card
+							<AsideCard
 								userKeyData={user.keyData.lipidCount}
 								unit="g"
 								subtitle="Lipides"
