@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "../components/header.jsx";
 
@@ -11,14 +11,14 @@ import Dashboard from "../pages/dashboard.jsx";
 function Router() {
 	return (
 		<React.StrictMode>
-			<HashRouter>
+			<BrowserRouter>
 				<Header />
 				<Sidenav />
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/user/:userId" element={<Dashboard />} />
 				</Routes>
-			</HashRouter>
+			</BrowserRouter>
 		</React.StrictMode>
 	);
 }
