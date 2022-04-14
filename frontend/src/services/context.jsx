@@ -2,7 +2,7 @@ import React, { useState, createContext, useEffect } from "react";
 
 export const Context = createContext();
 
-export const Provider = ({ children }) => {
+export const ApiFetch = ({ children }) => {
 	const [userId, setUserId] = useState(null);
 	const [user, setUser] = useState(null);
 	const [activity, setActivity] = useState(null);
