@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CharlesLippens_12_08042022/static/css/main.ebb0dd04.css",
-    "main.js": "/CharlesLippens_12_08042022/static/js/main.bcafbf5f.js",
+    "main.js": "/CharlesLippens_12_08042022/static/js/main.b45b8d38.js",
     "static/media/logo.svg": "/CharlesLippens_12_08042022/static/media/logo.837414860efdf652f26ae7be654e06c5.svg",
     "static/media/swimming.svg": "/CharlesLippens_12_08042022/static/media/swimming.bc12b705d445672f550a8441d581c700.svg",
     "static/media/biking.svg": "/CharlesLippens_12_08042022/static/media/biking.fe885ecda828d3e2f637bb3b675db76c.svg",
@@ -13,10 +13,10 @@
     "static/media/energy.svg": "/CharlesLippens_12_08042022/static/media/energy.25fef86ed5860200bdf90f9cd185e1e3.svg",
     "static/media/haltere.svg": "/CharlesLippens_12_08042022/static/media/haltere.9d22814b98d0ca386d9ddacded4eae80.svg",
     "main.ebb0dd04.css.map": "/CharlesLippens_12_08042022/static/css/main.ebb0dd04.css.map",
-    "main.bcafbf5f.js.map": "/CharlesLippens_12_08042022/static/js/main.bcafbf5f.js.map"
+    "main.b45b8d38.js.map": "/CharlesLippens_12_08042022/static/js/main.b45b8d38.js.map"
   },
   "entrypoints": [
     "static/css/main.ebb0dd04.css",
-    "static/js/main.bcafbf5f.js"
+    "static/js/main.b45b8d38.js"
   ]
 }
