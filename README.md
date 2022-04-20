@@ -13,13 +13,13 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 - React Version 18.0.0
 
-- React-router-dom 
+- React-router-dom 6.3.0
 
-- JSDoc ( to generate API documentation)
+- Recharts 2.1.9
 
-- Recharts
+- Prop-types 15.8.1
 
-- Prop-types
+- JSDoc ( to generate API documentation) 3.6.10
 
 
 ## 1.2 Clone or download P12 repository
@@ -30,7 +30,7 @@ Clone the P12 repository CharlesLippens_12_08042022 (containing backend+frontend
 
 Inside the backend folder, install the packages/dependencies with command on terminal: `yarn`
 
-Run the Backend API, which will then listen on port 3000 by default with command on terminal: `yarn dev` ( command which will allow you to run the micro API)
+Run the Backend API, which will then listen on port 3000 by default with command on terminal: `yarn start` ( command which will allow you to run the micro API)
 
 You will see the message Magic happens on port 3000 in the terminal window.
 
@@ -60,6 +60,8 @@ TODO list:
 - Optimized PropTypes
 
 - Responsive? 
+
+- Classes functions instead of functionnal functions?
 
 - Optimize design from mockup 
 
