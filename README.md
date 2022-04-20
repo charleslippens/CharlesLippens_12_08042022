@@ -1,3 +1,4 @@
+Application  (datas mockées): https://charles-lippens-12-08042022.vercel.app/
 
 # 1. Project: installation steps
 
@@ -10,17 +11,15 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## 1.1.2 Dependencies
 
-React Version 18.0.0
+- React Version 18.0.0
 
-React-router-dom 
+- React-router-dom 6.3.0
 
-JSDoc ( to generate API documentation)
+- Recharts 2.1.9
 
-Recharts
+- Prop-types 15.8.1
 
-Prop-types
-
-Styled-Components ?
+- JSDoc ( to generate API documentation) 3.6.10
 
 
 ## 1.2 Clone or download P12 repository
@@ -31,7 +30,7 @@ Clone the P12 repository CharlesLippens_12_08042022 (containing backend+frontend
 
 Inside the backend folder, install the packages/dependencies with command on terminal: `yarn`
 
-Run the Backend API, which will then listen on port 3000 by default with command on terminal: `yarn dev` ( command which will allow you to run the micro API)
+Run the Backend API, which will then listen on port 3000 by default with command on terminal: `yarn start` ( command which will allow you to run the micro API)
 
 You will see the message Magic happens on port 3000 in the terminal window.
 
@@ -50,5 +49,28 @@ App Figma mockup: https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sp
 Kanban Notion: https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e
 
 Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+
+TODO list:
+
+
+- Recharts: optimize charts, design (see documentation)
+
+- CSS integration: can use Styled-components
+
+- Optimized PropTypes
+
+- Responsive? 
+
+- Classes functions instead of functionnal functions?
+
+- Optimize design from mockup 
+
+- external API: Postman, realize HTTP requests from API
+
+- models classes (modelization, abstraction): to fetch and format data from API to complete charts
+
+- Switch to mocked data or API
+
+- JSDOC (for classes and functions/methods: parameters, return values etc ..) : JSDoc package to autogenerate a detailed project doc (via routing type /docs)
 
 
