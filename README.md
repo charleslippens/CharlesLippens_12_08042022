@@ -52,9 +52,8 @@ Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-fron
 
 TODO list:
 
-- Styled-Components ?
 
-- Recharts: optimize (see documentation)
+- Recharts: optimize charts, design (see documentation)
 
 - CSS integration: can use Styled-components
 
@@ -62,7 +61,7 @@ TODO list:
 
 - Responsive? 
 
-- Optimize design from mockup
+- Optimize design from mockup 
 
 - external API: Postman, realize HTTP requests from API
 
