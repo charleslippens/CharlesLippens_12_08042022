@@ -11,17 +11,15 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## 1.1.2 Dependencies
 
-React Version 18.0.0
+- React Version 18.0.0
 
-React-router-dom 
+- React-router-dom 
 
-JSDoc ( to generate API documentation)
+- JSDoc ( to generate API documentation)
 
-Recharts
+- Recharts
 
-Prop-types
-
-Styled-Components ?
+- Prop-types
 
 
 ## 1.2 Clone or download P12 repository
@@ -51,5 +49,25 @@ App Figma mockup: https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sp
 Kanban Notion: https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e
 
 Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+
+TODO list:
+
+- Styled-Components ?
+
+- Recharts: optimize (see documentation)
+
+- CSS integration: can use Styled-components
+
+- Optimized PropTypes
+
+- Responsive? 
+
+- Optimize design from mockup
+
+- external API: Postman, realize HTTP requests from API
+
+- models classes (modelization, abstraction): to fetch data
+
+- JSDOC (for classes and functions/methods: parameters, return values etc ..) : JSDoc package to autogenerate a detailed project doc (via routing type /docs)
 
 
