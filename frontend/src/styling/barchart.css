@@ -1,0 +1,42 @@
+.ActvityCircles {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #74798c;
+	width: 18rem;
+	display: flex;
+	justify-content: space-between;
+	float: right;
+}
+.ActvityCircle {
+	display: flex;
+}
+
+.Actvity-circle_black {
+	width: 0.6rem;
+	height: 0.65rem;
+	background-color: black;
+	border-radius: 0.3rem;
+	margin-top: 1.2rem;
+	margin-right: 0.5rem;
+}
+.Actvity-circle_red {
+	width: 0.6rem;
+	height: 0.65rem;
+	background-color: #e60000;
+	border-radius: 0.3rem;
+	margin-top: 1.2rem;
+	margin-right: 0.5rem;
+}
+.ActvityTitle {
+	font-size: 1rem;
+	font-weight: 600;
+	padding-top: 0.8rem;
+}
+.ToolTipLabel {
+	background: #ff0000;
+	color: #fff;
+	font-size: 0.438rem;
+	font-weight: 500;
+	margin: 0.313rem;
+	padding: 0.313rem;
+}

@@ -1,6 +1,10 @@
 import "../styling/card.css";
 import PropTypes from "prop-types";
-
+/**
+ * desc
+ * @date 2022-04-20
+ * @param { userKeyData, unit, subtitle, className, logo } parm1
+ */
 function AsideCard({ userKeyData, unit, subtitle, className, logo }) {
 	return (
 		<div className="asidecard ">

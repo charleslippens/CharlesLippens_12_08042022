@@ -1,0 +1,44 @@
+.ScoreTitle {
+	top: 10%;
+	left: 10%;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #20253a;
+}
+.score {
+	position: relative;
+}
+.score .recharts-responsive-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.chartgoal-title {
+	position: absolute;
+	top: 1.5rem;
+	left: 1.875rem;
+	color: #20253a;
+	font-size: 0.9375rem;
+	font-weight: 500;
+}
+.chartgoal-label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #9b9eac;
+	font-weight: 500;
+	line-height: 1.625rem;
+	text-align: center;
+}
+.chartgoal-label p {
+	margin: 0;
+}
+.chartgoal-label .percent {
+	color: #282d30;
+	font-size: 1.625rem;
+	font-weight: 700;
+}

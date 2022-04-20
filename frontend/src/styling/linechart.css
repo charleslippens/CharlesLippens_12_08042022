@@ -1,0 +1,16 @@
+.custom-tooltip_goals {
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 0rem;
+	padding: 0.5rem 0.5rem;
+	background-color: white;
+}
+.GoalsTitle {
+	width: 70%;
+	font-size: 0.65rem;
+	font-weight: 500;
+	top: 0;
+	color: rgba(255, 255, 255, 0.6);
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+}

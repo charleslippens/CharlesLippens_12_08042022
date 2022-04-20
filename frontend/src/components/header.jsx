@@ -4,6 +4,11 @@ import logo from "../assets/logo.svg";
 
 import "../styling/header.css";
 
+/**
+ *
+ *
+ * @return {*}
+ */
 function Header() {
 	return (
 		<header className="nav-wrapper">

@@ -7,6 +7,11 @@ import haltere from "../assets/haltere.svg";
 
 import SidenavButton from "./sidenavbutton.jsx";
 
+/**
+ *
+ *
+ * @return {*}
+ */
 function Sidenav() {
 	return (
 		<aside className="sidebar">

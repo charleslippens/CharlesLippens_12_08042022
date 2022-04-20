@@ -1,6 +1,12 @@
 import "../styling/sidebarbutton.css";
 import propTypes from "prop-types";
 
+/**
+ *
+ *
+ * @param {*} { logo }
+ * @return {*}
+ */
 function SidenavButton({ logo }) {
 	return (
 		<button className="sidebar-button">
