@@ -13,8 +13,8 @@ export const ApiFetch = ({ children }) => {
 		if (userId) {
 			// for mocked data
 			//
-			//fetch(`../${userId}.json`).then((response) =>
-			fetch(`http://localhost:3000/user/${userId}`).then((response) =>
+			fetch(`../${userId}.json`).then((response) =>
+				//fetch(`http://localhost:3000/user/${userId}`).then((response) =>
 				response
 					.json()
 					.then(({ data }) => {
@@ -23,8 +23,8 @@ export const ApiFetch = ({ children }) => {
 					.catch((error) => console.log(error))
 			);
 			//for using mocked data
-			//fetch(`../${userId}/activity.json`).then((response) =>
-			fetch(`http://localhost:3000/user/${userId}/activity`).then((response) =>
+			fetch(`../${userId}/activity.json`).then((response) =>
+				//fetch(`http://localhost:3000/user/${userId}/activity`).then((response) =>
 				response
 					.json()
 					.then(({ data }) => {
@@ -33,8 +33,8 @@ export const ApiFetch = ({ children }) => {
 					.catch((error) => console.log(error))
 			);
 			//for using mocked data
-			//fetch(`../${userId}/average-sessions.json`).then((response) =>
-			fetch(`http://localhost:3000/user/${userId}/average-sessions`).then((response) =>
+			fetch(`../${userId}/average-sessions.json`).then((response) =>
+				//fetch(`http://localhost:3000/user/${userId}/average-sessions`).then((response) =>
 				response
 					.json()
 					.then(({ data }) => {
@@ -43,8 +43,8 @@ export const ApiFetch = ({ children }) => {
 					.catch((error) => console.log(error))
 			);
 			//for using mocked data
-			//fetch(`../${userId}/performance.json`).then((response) =>
-			fetch(`http://localhost:3000/user/${userId}/performance`).then((response) =>
+			fetch(`../${userId}/performance.json`).then((response) =>
+				//fetch(`http://localhost:3000/user/${userId}/performance`).then((response) =>
 				response
 					.json()
 					.then(({ data }) => {
