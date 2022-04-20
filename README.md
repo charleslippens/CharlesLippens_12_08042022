@@ -66,7 +66,9 @@ TODO list:
 
 - external API: Postman, realize HTTP requests from API
 
-- models classes (modelization, abstraction): to fetch data
+- models classes (modelization, abstraction): to fetch and format data from API to complete charts
+
+- Switch to mocked data or API
 
 - JSDOC (for classes and functions/methods: parameters, return values etc ..) : JSDoc package to autogenerate a detailed project doc (via routing type /docs)
 
