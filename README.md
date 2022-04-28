@@ -52,6 +52,8 @@ Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-fron
 
 TODO list:
 
+- users in context using URL parameters not hard coded ?
+
 - Optimize design from mockup 
 
 - Recharts: optimize charts, design (see documentation, features, parameters etc)
