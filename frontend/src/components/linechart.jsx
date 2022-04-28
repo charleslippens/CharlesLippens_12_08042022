@@ -2,12 +2,16 @@ import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "rec
 import PropTypes from "prop-types";
 import "../styling/linechart.css";
 
-/**
- *
- *
- * @param {*} { data }
- * @return {*}
- */
+function GreyArea({ cx, cy }) {
+	return (
+		<svg>
+			<rect x={cx} y={0} width="100%" height="100%" fill="#00000030" rx="5" ry="5" />
+			<circle cx={cx} cy={cy} r="9" fill="#FFFFFF50" />
+			<circle cx={cx} cy={cy} r="4" fill="#FFFFFF" />
+		</svg>
+	);
+}
+
 function LineChartAvgSessions({ data }) {
 	const TranformDay = (tickItem) => {
 		const Day = ["L", "M", "M", "J", "V", "S", "D"];
@@ -39,11 +43,7 @@ function LineChartAvgSessions({ data }) {
 						stroke="url(#colorUv)"
 						dot={false}
 						strokeWidth={2}
-						activeDot={{
-							stroke: "#FFF",
-							strokeWidth: 4,
-							r: 2,
-						}}
+						activeDot={GreyArea}
 					/>
 					<XAxis
 						tick={{
