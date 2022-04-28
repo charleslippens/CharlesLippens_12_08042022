@@ -82,7 +82,7 @@ function LineChartAvgSessions({ data }) {
 	);
 }
 LineChartAvgSessions.propTypes = {
-	data: PropTypes.array,
+	data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default LineChartAvgSessions;

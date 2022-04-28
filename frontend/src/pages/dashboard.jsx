@@ -52,9 +52,9 @@ function Dashboard() {
 	}, [userId, setUserId, setUser, setActivity, setAverageSessions, setPerformance]);
 
 	return (
-		<section className="profil">
+		<section className="profil-wrapper">
 			{user && (
-				<div>
+				<div className="profil">
 					<h2 className="dashboard-title">
 						Bonjour <span className="dashboard-firstName">{user.firstName}</span>
 					</h2>

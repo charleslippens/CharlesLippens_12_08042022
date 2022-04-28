@@ -15,7 +15,7 @@ function Header() {
 			<Link to="/">
 				<img src={logo} alt="SportSee Logo" className="nav-logo" />
 			</Link>
-			<nav className="nav">
+			<nav className="nav vertical-center">
 				<NavLink
 					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
 					to="/home"

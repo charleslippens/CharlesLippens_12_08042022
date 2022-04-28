@@ -5,7 +5,7 @@ import "../styling/radialchart.css";
 /**
  *
  *
- * @param {*} { circleSize, data }
+ * @param {*} { data }
  * @return {*}
  */
 function RadialChart({ data }) {
@@ -20,7 +20,7 @@ function RadialChart({ data }) {
 	return (
 		<>
 			<div className="ScoreTitle">Score</div>
-			<ResponsiveContainer width="70%" height="70%">
+			<ResponsiveContainer width="90%" height="70%">
 				<RadialBarChart
 					innerRadius="0%"
 					outerRadius="0%"
@@ -51,7 +51,6 @@ function RadialChart({ data }) {
 	);
 }
 RadialChart.propTypes = {
-	circleSize: PropTypes.number,
 	data: PropTypes.object.isRequired,
 };
 export default RadialChart;

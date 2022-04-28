@@ -15,12 +15,7 @@ function RadarChartPerf({ data }) {
 	return (
 		<>
 			<ResponsiveContainer width="100%" height="100%">
-				<RadarChart
-					outerRadius={90}
-					width={260}
-					height={260}
-					data={[...data.data].reverse()}
-				>
+				<RadarChart outerRadius={90} data={[...data.data].reverse()}>
 					<PolarGrid
 						radialLines={false}
 						gridType="polygon"

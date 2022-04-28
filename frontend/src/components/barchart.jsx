@@ -1,12 +1,20 @@
-import { ResponsiveContainer, XAxis, Tooltip, BarChart, CartesianGrid, YAxis, Bar } from "recharts";
+import {
+	Legend,
+	ResponsiveContainer,
+	XAxis,
+	Tooltip,
+	BarChart,
+	CartesianGrid,
+	YAxis,
+	Bar,
+} from "recharts";
 import PropTypes from "prop-types";
 import "../styling/barchart.css";
 
 /**
- * desc
- * @date 2022-04-20
- * @param { data } parm1
- * @return
+ * Display a Bar Chart with activity's datas from the API.
+ * @return { HtmlElements } BarChart's component is displayed dynamically.
+ * @param { Array } data
  */
 function BarChartActivity({ data }) {
 	const TranformDate = (tickItem) => {
@@ -21,13 +29,15 @@ function BarChartActivity({ data }) {
 	/**
 	 * It customs tooltip from this line chart.
 	 * @return { HtmlElements } CustomTooltip's component is displayed.
+	 * @param  { active } bool
+	 * @param  { payload } array
 	 */
 	const CustomTooltip = ({ active, payload }) => {
 		if (active && payload && payload.length) {
 			return (
 				<div className="custom-tooltip">
-					{`${payload[0].value} Kg`}
-					{`${payload[1].value} kCal`}
+					<p>{payload[0].value + "kg"}</p>
+					<p>{payload[1].value + "Kcal"}</p>
 				</div>
 			);
 		}
@@ -35,56 +45,55 @@ function BarChartActivity({ data }) {
 	};
 	return (
 		<>
-			<div className="ActvityTitle">Activité quotidienne</div>
-			<div className="ActvityCircles">
-				<div className="ActvityCircle">
-					<div className="Actvity-circle_black"></div>
-					<p>Poids (kg)</p>
-				</div>
-				<div className="ActvityCircle">
-					<div className=" Actvity-circle_red"></div>
-					<p>Calories brûlées (kCal)</p>
-				</div>
-			</div>
-			<ResponsiveContainer width="100%" height={300}>
-				<BarChart data={data} barSize={7} barCategoryGap="35%" barGap={2}>
-					<CartesianGrid strokeDasharray="2 2" vertical={false} />
-					<XAxis dataKey="day" tickFormatter={TranformDate} />
+			<h3 className="ActvityTitle">Activité quotidienne</h3>
+
+			<ResponsiveContainer width="100%" height="100%">
+				<BarChart data={data} barSize={7} barGap={8}>
+					<CartesianGrid strokeDasharray="3" vertical={false} />
+					<XAxis
+						dataKey="day"
+						tickFormatter={TranformDate}
+						tickLine={false}
+						strokeDasharray="3"
+						vertical={false}
+						strokeWidth={2}
+						tickMargin={16}
+						tick={{ fill: "#9B9EAC" }}
+						stroke="#DEDEDE"
+					/>
 					<YAxis
 						yAxisId="kilogram"
 						dataKey="kilogram"
 						orientation="right"
-						domain={["dataMin -3", "auto"]}
+						domain={["dataMin-2", "dataMax+1"]}
 						axisLine={false}
 						tickLine={false}
-						tickCount="3"
-						type="number"
+						tickCount={3}
+						tickMargin={30}
 					/>
-					<YAxis
-						yAxisId="calories"
-						tick={false}
-						orientation="left"
-						axisLine={false}
-						tickLine={false}
-						domain={[0, "auto"]}
-					/>
+					<YAxis hide yAxisId="calories" />
 
 					<Tooltip content={<CustomTooltip />} />
 					<Bar
 						yAxisId="kilogram"
-						name="kg"
+						name="Poids (kg)"
 						dataKey="kilogram"
 						fill="#282D30"
-						radius={[50, 50, 0, 0]}
-						barSize={8}
+						radius={[3, 3, 0, 0]}
 					/>
 					<Bar
 						yAxisId="calories"
-						name="kCal"
+						name="Calories brûlées (kCal)"
 						dataKey="calories"
 						fill="#E60000"
-						radius={[50, 50, 0, 0]}
-						barSize={8}
+						radius={[3, 3, 0, 0]}
+					/>
+					<Legend
+						verticalAlign="top"
+						align="right"
+						iconType="circle"
+						iconSize="10"
+						height={80}
 					/>
 				</BarChart>
 			</ResponsiveContainer>
@@ -93,6 +102,6 @@ function BarChartActivity({ data }) {
 }
 
 BarChartActivity.propTypes = {
-	data: PropTypes.array,
+	data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default BarChartActivity;

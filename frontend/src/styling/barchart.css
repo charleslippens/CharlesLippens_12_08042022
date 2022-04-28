@@ -28,9 +28,10 @@
 	margin-right: 0.5rem;
 }
 .ActvityTitle {
-	font-size: 1rem;
-	font-weight: 600;
-	padding-top: 0.8rem;
+	position: absolute;
+	color: #20253a;
+	font-size: 0.9375rem;
+	font-weight: 500;
 }
 .custom-tooltip {
 	width: 43px;

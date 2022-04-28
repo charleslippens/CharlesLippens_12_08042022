@@ -1,9 +1,12 @@
 import "../styling/card.css";
 import PropTypes from "prop-types";
 /**
- * desc
- * @date 2022-04-20
- * @param { userKeyData, unit, subtitle, className, logo } parm1
+ * Display a card with various sports performance informations.
+ * @param { userKeyData} number
+ * @param { unit} string
+ * @param {subtitle } string
+ * @param {className } string
+ * @param { logo } string
  * @return { HtmlElements } AsideBar's component is displayed dynamically.
  */
 function AsideCard({ userKeyData, unit, subtitle, className, logo }) {
@@ -28,7 +31,7 @@ AsideCard.propTypes = {
 	className: PropTypes.string.isRequired,
 	subtitle: PropTypes.string.isRequired,
 	unit: PropTypes.string.isRequired,
-	userKeyData: PropTypes.number,
+	userKeyData: PropTypes.number.isRequired,
 };
 
 export default AsideCard;

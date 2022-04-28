@@ -1,5 +1,6 @@
 import React, { useState, createContext, useEffect } from "react";
 import UserMapper from "../modelization/mapperuser.jsx";
+import PropTypes from "prop-types";
 
 export const Context = createContext();
 
@@ -74,4 +75,8 @@ export const ApiFetch = ({ children }) => {
 			{children}
 		</Context.Provider>
 	);
+};
+
+ApiFetch.propTypes = {
+	children: PropTypes.object.isRequired,
 };
