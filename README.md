@@ -52,18 +52,17 @@ Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-fron
 
 TODO list:
 
+- users in context using URL parameters not hard coded ?
 
-- Recharts: optimize charts, design (see documentation)
+- Optimize design from mockup 
+
+- Recharts: optimize charts, design (see documentation, features, parameters etc)
 
 - CSS integration: can use Styled-components
 
 - Optimized PropTypes
 
-- Responsive? 
-
 - Classes functions instead of functionnal functions?
-
-- Optimize design from mockup 
 
 - external API: Postman, realize HTTP requests from API
 
@@ -72,5 +71,7 @@ TODO list:
 - Switch to mocked data or API
 
 - JSDOC (for classes and functions/methods: parameters, return values etc ..) : JSDoc package to autogenerate a detailed project doc (via routing type /docs)
+
+- Responsive? 
 
 
