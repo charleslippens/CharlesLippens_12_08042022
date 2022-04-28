@@ -56,8 +56,7 @@ function Dashboard() {
 			{user && (
 				<div>
 					<h2 className="dashboard-title">
-						Bonjour{" "}
-						<span className="dashboard-firstName">{user.userInfos.firstName}</span>
+						Bonjour <span className="dashboard-firstName">{user.firstName}</span>
 					</h2>
 					<p className="dashboard-subtitle">
 						Félicitation ! Vous avez explosé vos objectifs hier 👏
@@ -92,28 +91,28 @@ function Dashboard() {
 						</div>
 						<div className="dashboard-aside">
 							<AsideCard
-								userKeyData={user.keyData.calorieCount}
+								userKeyData={user.calorieCount}
 								unit="kCal"
 								subtitle="Calories"
 								className="calorie"
 								logo={energy}
 							/>
 							<AsideCard
-								userKeyData={user.keyData.proteinCount}
+								userKeyData={user.proteinCount}
 								unit="g"
 								subtitle="Proteines"
 								className="protein"
 								logo={chicken}
 							/>
 							<AsideCard
-								userKeyData={user.keyData.carbohydrateCount}
+								userKeyData={user.carbohydrateCount}
 								unit="g"
 								subtitle="Glucides"
 								className="carbohydrate"
 								logo={apple}
 							/>
 							<AsideCard
-								userKeyData={user.keyData.lipidCount}
+								userKeyData={user.lipidCount}
 								unit="g"
 								subtitle="Lipides"
 								className="lipid"

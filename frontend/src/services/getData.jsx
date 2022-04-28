@@ -1,4 +1,5 @@
 import React, { useState, createContext, useEffect } from "react";
+import UserMapper from "../modelization/mapperuser.jsx";
 
 export const Context = createContext();
 
@@ -18,7 +19,7 @@ export const ApiFetch = ({ children }) => {
 				response
 					.json()
 					.then(({ data }) => {
-						setUser(data);
+						setUser(UserMapper.convertToUser(data));
 					})
 					.catch((error) => console.log(error))
 			);

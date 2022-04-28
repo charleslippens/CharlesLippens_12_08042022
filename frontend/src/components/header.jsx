@@ -18,7 +18,7 @@ function Header() {
 			<nav className="nav">
 				<NavLink
 					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/"
+					to="/home"
 				>
 					Accueil
 				</NavLink>

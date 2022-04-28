@@ -27,11 +27,11 @@ h1 {
 }
 section {
 	width: 100%;
-	max-width: 1126px;
+	max-width: 1440px;
 	margin: 0 auto;
 	margin-top: 1rem;
 	padding-top: 1rem;
-	padding-left: 7.3125rem;
+	padding-left: 12rem;
 }
 #root {
 	display: flex;

@@ -1,5 +1,6 @@
 .ScoreTitle {
-	top: 10%;
+	position: absolute;
+	top: 8%;
 	left: 10%;
 	font-size: 1rem;
 	font-weight: 600;

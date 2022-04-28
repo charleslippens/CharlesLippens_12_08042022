@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
  * desc
  * @date 2022-04-20
  * @param { userKeyData, unit, subtitle, className, logo } parm1
+ * @return { HtmlElements } AsideBar's component is displayed dynamically.
  */
 function AsideCard({ userKeyData, unit, subtitle, className, logo }) {
 	return (
