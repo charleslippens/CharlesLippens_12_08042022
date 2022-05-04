@@ -52,9 +52,9 @@ Backend (using NodeJS): https://github.com/OpenClassrooms-Student-Center/P9-fron
 
 TODO list:
 
-- users in context using URL parameters not hard coded ?
+- Users in context using URL parameters not hard coded ?
 
-- Optimize design from mockup 
+- Optimize design from mockup for desktop 1027*780 (exact design for sections, charts etc?)
 
 - Recharts: optimize charts, design (see documentation, features, parameters etc)
 
@@ -72,6 +72,8 @@ TODO list:
 
 - JSDOC (for classes and functions/methods: parameters, return values etc ..) : JSDoc package to autogenerate a detailed project doc (via routing type /docs)
 
-- Responsive? 
+- full Responsive mobile/tablet? 
+
+- Typescript/ViteJS/NextJS/JS librairies/optimize code? etc
 
 
