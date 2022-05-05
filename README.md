@@ -38,11 +38,13 @@ You will see the message Magic happens on port 3000 in the terminal window.
 
 Inside the frontend folder, install the packages/dependencies with command on terminal: `yarn`
 
-Run the Frontend App with command on terminal: `yarn start`
+Run the Frontend App with command on terminal: `yarn start` and run it on port 3001 when message pop up.
 
 Warning, currently only two users have been mocked. They have userId 12 and 18 respectively.
 
 # 2. Documents:
+
+JSDOC : https://charleslippens.github.io/CharlesLippens_12_08042022/
 
 App Figma mockup: https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR
 
