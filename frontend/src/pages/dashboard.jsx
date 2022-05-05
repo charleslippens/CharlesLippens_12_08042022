@@ -18,12 +18,12 @@ import RadarChartPerf from "../components/radarchart.jsx";
 import "../styling/dashboard.css";
 
 /**
+ * Render Dashboard page
  *
- *
- * @return {*}
+ * @returns { HtmlElements } Dashboard
  */
 function Dashboard() {
-	document.title = "dashboard";
+	document.title = "Dashboard - SportSee";
 	const {
 		setUserId,
 		user,

@@ -2,10 +2,10 @@ import "../styling/cardcharts.css";
 import PropTypes from "prop-types";
 
 /**
- *Display a card for charts
- * @param  { content } object
- * @param  { className } string
- * @return { HtmlElements } cardcharts' component is displayed dynamically.
+ * Display a card for charts
+ * @param  { object } content
+ * @param  { string } classname
+ * @returns { HtmlElements } cardcharts' component is displayed dynamically.
  */
 function CardCharts({ className, content }) {
 	return <div className={"charts-card " + className}>{content}</div>;

@@ -2,10 +2,9 @@ import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } fro
 import PropTypes from "prop-types";
 
 /**
- *
- *
- * @param {*} { data }
- * @return {*}
+ * Render a RadarChart
+ * @param {object} data
+ * @returns { HtmlElements } RadarChart
  */
 function RadarChartPerf({ data }) {
 	const TranformKind = (tickItem) => {

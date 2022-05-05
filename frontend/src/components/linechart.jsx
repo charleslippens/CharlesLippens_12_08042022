@@ -1,7 +1,12 @@
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import PropTypes from "prop-types";
 import "../styling/linechart.css";
-
+/**
+ * It Create a rectangle and circles when the dot, from the chart, is active.
+ * @param {number} cx
+ * @param {number} cy
+ * @return { HtmlElements } Rectangle's component is displayed.
+ */
 function GreyArea({ cx, cy }) {
 	return (
 		<svg>
@@ -12,11 +17,28 @@ function GreyArea({ cx, cy }) {
 	);
 }
 
+GreyArea.propTypes = {
+	cx: PropTypes.number,
+	cy: PropTypes.number,
+};
+
+/**
+ * Display a line Chart with average sessions's datas from the API.
+ * @param {object} data
+ * @return { HtmlElements } SimpleLineChart's component is displayed dynamically.
+ */
 function LineChartAvgSessions({ data }) {
 	const TranformDay = (tickItem) => {
 		const Day = ["L", "M", "M", "J", "V", "S", "D"];
 		if (tickItem) return Day[tickItem - 1];
 	};
+
+	/**
+	 * It custom tooltip from this line chart.
+	 * @param  { object } active
+	 * @param  { string } payload
+	 * @return { HtmlElements } CustomTooltip's component is displayed.
+	 */
 	const CustomTooltip = ({ active, payload }) => {
 		if (active && payload && payload.length) {
 			return (

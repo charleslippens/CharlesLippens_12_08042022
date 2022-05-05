@@ -1,0 +1,81 @@
+.button-switch {
+	position: relative;
+	width: 4.6875rem;
+	text-align: left;
+}
+.button-switch-checkbox {
+	display: none;
+}
+.button-switch-label {
+	display: block;
+	overflow: hidden;
+	border: 0 solid #bbb;
+	border-radius: 1.25rem;
+	cursor: pointer;
+}
+.button-switch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.button-switch-inner:before,
+.button-switch-inner:after {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	line-height: 2.125rem;
+}
+.button-switch-inner:before {
+	padding-left: 0.625rem;
+	background-color: #2f855a;
+	color: #fff;
+	content: attr(data-yes);
+}
+.button-switch-disabled {
+	background-color: #ddd;
+	cursor: not-allowed;
+}
+.button-switch-disabled:before {
+	background-color: #ddd;
+	cursor: not-allowed;
+}
+.button-switch-inner:after {
+	padding-right: 0.625rem;
+	background-color: #bbb;
+	color: #fff;
+	text-align: right;
+	content: attr(data-no);
+}
+.button-switch-switch {
+	position: absolute;
+	top: 0;
+	right: 2.5rem;
+	bottom: 0;
+	width: 1.5rem;
+	margin: 0.3125rem;
+	border-radius: 1.25rem;
+	background: #fff;
+	transition: all 0.3s ease-in 0s;
+}
+.button-switch-checkbox:checked + .button-switch-label .button-switch-inner {
+	margin-left: 0;
+}
+.button-switch-checkbox:checked + .button-switch-label .button-switch-switch {
+	right: 0rem;
+}
+.button-switch.small-switch {
+	width: 2.5rem;
+}
+.button-switch.small-switch .button-switch-inner:after,
+.button-switch.small-switch .button-switch-inner:before {
+	height: 1.25rem;
+	line-height: 1.25rem;
+	content: "";
+}
+.button-switch.small-switch .button-switch-switch {
+	right: 1.25rem;
+	width: 1rem;
+	margin: 0.125rem;
+}

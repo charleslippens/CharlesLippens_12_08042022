@@ -1,10 +1,19 @@
 import React, { useState, createContext, useEffect } from "react";
 import UserMapper from "../modelization/mapperuser.jsx";
+import UserSessionMapper from "../modelization/mappersessionsdata.jsx";
+import UserPerformanceMapper from "../modelization/mapperuserperfdata.jsx";
+import UserActivitiesMapper from "../modelization/mapperuseractdata.jsx";
+
 import PropTypes from "prop-types";
 
 export const Context = createContext();
-
+/**
+ * Provider of the data for the app using context, state and fetch
+ * @param {object} children
+ * @return { HtmlElements} returning the Context.Provider with the value of the state and the setState functions
+ */
 export const ApiFetch = ({ children }) => {
+	const [userSwitch, setUserSwitch] = useState(false);
 	const [userId, setUserId] = useState(null);
 	const [user, setUser] = useState(null);
 	const [activity, setActivity] = useState(null);
@@ -30,7 +39,7 @@ export const ApiFetch = ({ children }) => {
 				response
 					.json()
 					.then(({ data }) => {
-						setActivity(data);
+						setActivity(UserActivitiesMapper.convertToActivities(data));
 					})
 					.catch((error) => console.log(error))
 			);
@@ -40,7 +49,7 @@ export const ApiFetch = ({ children }) => {
 				response
 					.json()
 					.then(({ data }) => {
-						setAverageSessions(data);
+						setAverageSessions(UserSessionMapper.convertToSession(data));
 					})
 					.catch((error) => console.log(error))
 			);
@@ -50,7 +59,7 @@ export const ApiFetch = ({ children }) => {
 				response
 					.json()
 					.then(({ data }) => {
-						setPerformance(data);
+						setPerformance(UserPerformanceMapper.convertToUserPerf(data));
 					})
 					.catch((error) => console.log(error))
 			);
@@ -60,6 +69,8 @@ export const ApiFetch = ({ children }) => {
 	return (
 		<Context.Provider
 			value={{
+				userSwitch,
+				setUserSwitch,
 				userId,
 				setUserId,
 				user,

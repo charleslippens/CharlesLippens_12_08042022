@@ -8,9 +8,9 @@ import haltere from "../assets/haltere.svg";
 import SidenavButton from "./sidenavbutton.jsx";
 
 /**
- *
- *
- * @return {*}
+ * Render the sidebar with buttons and copyright
+ * @param
+ * @return { HtmlElements } Sidenav
  */
 function Sidenav() {
 	return (

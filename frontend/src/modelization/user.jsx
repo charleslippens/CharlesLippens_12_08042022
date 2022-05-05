@@ -1,5 +1,18 @@
 export default class User {
 	constructor(
+		/**
+		 * User informations
+		 *
+		 * @param { number } id
+		 * @param { string } firstName
+		 * @param { string } lastName
+		 * @param { number } age
+		 * @param { number } score
+		 * @param { number } calorieCount
+		 * @param { number } proteinCount
+		 * @param { number } carbohydrateCount
+		 * @param { number } lipidCount
+		 */
 		id,
 		firstName,
 		lastName,

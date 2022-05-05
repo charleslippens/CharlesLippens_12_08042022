@@ -13,13 +13,12 @@ import "../styling/barchart.css";
 
 /**
  * Display a Bar Chart with activity's datas from the API.
- * @return { HtmlElements } BarChart's component is displayed dynamically.
  * @param { Array } data
+ * @return { HtmlElements } BarChart's component is displayed dynamically.
  */
 function BarChartActivity({ data }) {
 	const TranformDate = (tickItem) => {
 		let formattedDate = "";
-
 		if (tickItem) {
 			let parts = tickItem.split("-");
 			formattedDate = `${parts[2].replace(/^0+/, "")}`;
@@ -29,8 +28,8 @@ function BarChartActivity({ data }) {
 	/**
 	 * It customs tooltip from this line chart.
 	 * @return { HtmlElements } CustomTooltip's component is displayed.
-	 * @param  { active } bool
-	 * @param  { payload } array
+	 * @param  { bool } active
+	 * @param  { array } payload
 	 */
 	const CustomTooltip = ({ active, payload }) => {
 		if (active && payload && payload.length) {

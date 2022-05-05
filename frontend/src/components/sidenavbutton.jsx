@@ -2,10 +2,9 @@ import "../styling/sidebarbutton.css";
 import propTypes from "prop-types";
 
 /**
- *
- *
- * @param {*} { logo }
- * @return {*}
+ * Render a button with an image
+ * @param {string } logo
+ * @return { HtmlElements } Sidenavbutton
  */
 function SidenavButton({ logo }) {
 	return (

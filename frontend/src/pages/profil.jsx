@@ -1,21 +1,24 @@
-import { Link } from "react-router-dom";
 import "../styling/profil.css";
+import { Context } from "../services/getData.jsx";
+import SwitchUser from "../components/switchuser.jsx";
+import { useContext } from "react";
 /**
- *
- *
- * @return {*}
+ * Render Home
+ * @param
+ * @return { HtmlElements } Home
  */
 function Profil() {
+	const { userSwitch, setUserSwitch } = useContext(Context);
+
 	return (
 		<section className="home">
-			<div>
-				<Link className="btn" to={"/user/12/"}>
-					Profil de Karl Utilisateur numéro 12{" "}
-				</Link>
-				<Link className="btn" to={"/user/18/"}>
-					Profil de Cécilia Utilisateur numéro 18
-				</Link>
-			</div>
+			<div> Switch Utilisateur:</div>
+			<SwitchUser
+				id="user"
+				checked={userSwitch}
+				onChange={setUserSwitch}
+				optionLabels={["18", "12"]}
+			/>
 		</section>
 	);
 }

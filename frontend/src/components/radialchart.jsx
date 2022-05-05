@@ -3,10 +3,9 @@ import PropTypes from "prop-types";
 import "../styling/radialchart.css";
 
 /**
- *
- *
- * @param {*} { data }
- * @return {*}
+ * Render a Radial Bar Chart using Recharts
+ * @param {object} data
+ * @return { HtmlElements } RadialChart
  */
 function RadialChart({ data }) {
 	let score = 0;

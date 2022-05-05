@@ -1,15 +1,20 @@
 import { NavLink, Link } from "react-router-dom";
 
 import logo from "../assets/logo.svg";
+import { Context } from "../services/getData.jsx";
+import { useContext } from "react";
 
 import "../styling/header.css";
 
 /**
- *
- *
- * @return {*}
+ * Render the Header with a logo and a navbar
+ * The user's profile page is determined by the SwitchUser state in the Context
+ * @param
+ * @returns { HtmlElements } Header
  */
 function Header() {
+	const { userSwitch } = useContext(Context);
+	const userId = userSwitch ? 18 : 12;
 	return (
 		<header className="nav-wrapper">
 			<Link to="/">
@@ -18,13 +23,13 @@ function Header() {
 			<nav className="nav vertical-center">
 				<NavLink
 					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/home"
+					to="/"
 				>
 					Accueil
 				</NavLink>
 				<NavLink
 					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/profil"
+					to={`/user/${userId}/`}
 				>
 					Profil
 				</NavLink>
