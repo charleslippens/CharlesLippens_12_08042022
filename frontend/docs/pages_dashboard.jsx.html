@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/dashboard.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/dashboard.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useEffect, useContext } from "react";
+import { useParams } from "react-router-dom";
+import { Context } from "../services/getData.jsx";
+
+import energy from "../assets/energy.svg";
+import chicken from "../assets/chicken.svg";
+import apple from "../assets/apple.svg";
+import cheeseburger from "../assets/cheeseburger.svg";
+
+import AsideCard from "../components/asidecard.jsx";
+import CardCharts from "../components/cardcharts.jsx";
+
+import BarChartActivity from "../components/barchart.jsx";
+import RadialChart from "../components/radialchart.jsx";
+import LineChartAvgSessions from "../components/linechart.jsx";
+import RadarChartPerf from "../components/radarchart.jsx";
+
+import "../styling/dashboard.css";
+
+/**
+ * Render Dashboard page
+ *
+ * @returns { HtmlElements } Dashboard
+ */
+function Dashboard() {
+	document.title = "Dashboard - SportSee";
+	const {
+		setUserId,
+		user,
+		setUser,
+		activity,
+		setActivity,
+		averageSessions,
+		setAverageSessions,
+		performance,
+		setPerformance,
+	} = useContext(Context);
+
+	const { userId } = useParams();
+
+	useEffect(() => {
+		if (userId) {
+			setUserId(userId);
+		}
+		return () => {
+			setUserId(null);
+			setUser(null);
+			setActivity(null);
+			setAverageSessions(null);
+			setPerformance(null);
+		};
+	}, [userId, setUserId, setUser, setActivity, setAverageSessions, setPerformance]);
+
+	return (
+		&lt;section className="profil-wrapper">
+			{user &amp;&amp; (
+				&lt;div className="profil">
+					&lt;h2 className="dashboard-title">
+						Bonjour &lt;span className="dashboard-firstName">{user.firstName}&lt;/span>
+					&lt;/h2>
+					&lt;p className="dashboard-subtitle">
+						Félicitation ! Vous avez explosé vos objectifs hier 👏
+					&lt;/p>
+					&lt;div className="dashboard">
+						&lt;div className="dashboard-charts-wrapper">
+							&lt;div className="dashboard-charts">
+								{activity &amp;&amp; &lt;BarChartActivity data={activity.sessions} />}
+							&lt;/div>
+							&lt;div className="small-card-wrapper">
+								{averageSessions &amp;&amp; (
+									&lt;CardCharts
+										className="average-sessions"
+										content={
+											&lt;LineChartAvgSessions data={averageSessions.sessions} />
+										}
+									/>
+								)}
+								{performance &amp;&amp; (
+									&lt;CardCharts
+										className="performance"
+										content={&lt;RadarChartPerf data={performance} />}
+									/>
+								)}
+								{user &amp;&amp; (
+									&lt;CardCharts
+										className="score"
+										content={&lt;RadialChart data={user} />}
+									/>
+								)}
+							&lt;/div>
+						&lt;/div>
+						&lt;div className="dashboard-aside">
+							&lt;AsideCard
+								userKeyData={user.calorieCount}
+								unit="kCal"
+								subtitle="Calories"
+								className="calorie"
+								logo={energy}
+							/>
+							&lt;AsideCard
+								userKeyData={user.proteinCount}
+								unit="g"
+								subtitle="Proteines"
+								className="protein"
+								logo={chicken}
+							/>
+							&lt;AsideCard
+								userKeyData={user.carbohydrateCount}
+								unit="g"
+								subtitle="Glucides"
+								className="carbohydrate"
+								logo={apple}
+							/>
+							&lt;AsideCard
+								userKeyData={user.lipidCount}
+								unit="g"
+								subtitle="Lipides"
+								className="lipid"
+								logo={cheeseburger}
+							/>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			)}
+		&lt;/section>
+	);
+}
+
+export default Dashboard;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.exports_module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApiFetch">ApiFetch</a></li><li><a href="global.html#AsideCard">AsideCard</a></li><li><a href="global.html#BarChartActivity">BarChartActivity</a></li><li><a href="global.html#CardCharts">CardCharts</a></li><li><a href="global.html#convertToActivities">convertToActivities</a></li><li><a href="global.html#convertToSession">convertToSession</a></li><li><a href="global.html#convertToUser">convertToUser</a></li><li><a href="global.html#convertToUserPerf">convertToUserPerf</a></li><li><a href="global.html#Dashboard">Dashboard</a></li><li><a href="global.html#GreyArea">GreyArea</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#LineChartAvgSessions">LineChartAvgSessions</a></li><li><a href="global.html#Profil">Profil</a></li><li><a href="global.html#RadarChartPerf">RadarChartPerf</a></li><li><a href="global.html#RadialChart">RadialChart</a></li><li><a href="global.html#Router">Router</a></li><li><a href="global.html#Sidenav">Sidenav</a></li><li><a href="global.html#SidenavButton">SidenavButton</a></li><li><a href="global.html#SwitchUser">SwitchUser</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Thu May 05 2022 02:34:55 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -5,7 +5,7 @@ import { useContext } from "react";
 /**
  * Render Home
  * @param
- * @return { HtmlElements } Home
+ * @returns { HtmlElements } Home
  */
 function Profil() {
 	const { userSwitch, setUserSwitch } = useContext(Context);

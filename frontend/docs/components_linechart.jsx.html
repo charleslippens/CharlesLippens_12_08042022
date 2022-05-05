@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/linechart.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/linechart.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
+import PropTypes from "prop-types";
+import "../styling/linechart.css";
+/**
+ * It Create a rectangle and circles when the dot, from the chart, is active.
+ * @param {number} cx
+ * @param {number} cy
+ * @returns {HtmlElements} Rectangle's component is displayed.
+ */
+function GreyArea({ cx, cy }) {
+	return (
+		&lt;svg>
+			&lt;rect x={cx} y={0} width="100%" height="100%" fill="#00000030" rx="5" ry="5" />
+			&lt;circle cx={cx} cy={cy} r="9" fill="#FFFFFF50" />
+			&lt;circle cx={cx} cy={cy} r="4" fill="#FFFFFF" />
+		&lt;/svg>
+	);
+}
+
+GreyArea.propTypes = {
+	cx: PropTypes.number,
+	cy: PropTypes.number,
+};
+
+/**
+ * Display a line Chart with average sessions's datas from the API.
+ * @param {object} data
+ * @return { HtmlElements } SimpleLineChart's component is displayed dynamically.
+ */
+function LineChartAvgSessions({ data }) {
+	const TranformDay = (tickItem) => {
+		const Day = ["L", "M", "M", "J", "V", "S", "D"];
+		if (tickItem) return Day[tickItem - 1];
+	};
+
+	/**
+	 * It custom tooltip from this line chart.
+	 * @param  { object } active
+	 * @param  { string } payload
+	 * @return { HtmlElements } CustomTooltip's component is displayed.
+	 */
+	const CustomTooltip = ({ active, payload }) => {
+		if (active &amp;&amp; payload &amp;&amp; payload.length) {
+			return (
+				&lt;div className="custom-tooltip_goals">
+					&lt;p> {`${payload[0].value} `}min&lt;/p>
+				&lt;/div>
+			);
+		}
+
+		return null;
+	};
+
+	return (
+		&lt;>
+			&lt;div className="GoalsTitle">
+				Durée moyenne
+				&lt;br /> des sessions
+			&lt;/div>
+			&lt;ResponsiveContainer width="90%" height="70%">
+				&lt;LineChart data={data} className="averageSessions">
+					&lt;Line
+						type="natural"
+						dataKey="sessionLength"
+						stroke="url(#colorUv)"
+						dot={false}
+						strokeWidth={2}
+						activeDot={GreyArea}
+					/>
+					&lt;XAxis
+						tick={{
+							fill: "rgba(255,255,255,0.6)",
+							fontSize: "0.75rem",
+						}}
+						dataKey="day"
+						axisLine={false}
+						tickLine={false}
+						tickMargin={20}
+						tickFormatter={TranformDay}
+						scale="band"
+						interval="preserveStartEnd"
+					/>
+					&lt;YAxis type="number" domain={["dataMin-20", "dataMax+45"]} hide={true} />
+					&lt;defs>
+						&lt;linearGradient id="colorUv" x1="0%" y1="0" x2="100%" y2="0">
+							&lt;stop offset="0%" stopColor="rgba(255, 255, 255, 0.3)" />
+							&lt;stop offset="20%" stopColor="rgba(255, 255, 255, 0.4)" />
+							&lt;stop offset="40%" stopColor="rgba(255, 255, 255, 0.5)" />
+							&lt;stop offset="60%" stopColor="rgba(255, 255, 255, 0.6)" />
+							&lt;stop offset="100%" stopColor="rgba(255, 255, 255, 1)" />
+						&lt;/linearGradient>
+					&lt;/defs>
+					&lt;Tooltip
+						content={&lt;CustomTooltip />}
+						cursor={{
+							stroke: "black",
+							strokeOpacity: 0.05,
+							strokeWidth: 50,
+						}}
+					/>
+				&lt;/LineChart>
+			&lt;/ResponsiveContainer>
+		&lt;/>
+	);
+}
+LineChartAvgSessions.propTypes = {
+	data: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+export default LineChartAvgSessions;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.exports_module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApiFetch">ApiFetch</a></li><li><a href="global.html#AsideCard">AsideCard</a></li><li><a href="global.html#BarChartActivity">BarChartActivity</a></li><li><a href="global.html#CardCharts">CardCharts</a></li><li><a href="global.html#convertToActivities">convertToActivities</a></li><li><a href="global.html#convertToSession">convertToSession</a></li><li><a href="global.html#convertToUser">convertToUser</a></li><li><a href="global.html#convertToUserPerf">convertToUserPerf</a></li><li><a href="global.html#Dashboard">Dashboard</a></li><li><a href="global.html#GreyArea">GreyArea</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#LineChartAvgSessions">LineChartAvgSessions</a></li><li><a href="global.html#Profil">Profil</a></li><li><a href="global.html#RadarChartPerf">RadarChartPerf</a></li><li><a href="global.html#RadialChart">RadialChart</a></li><li><a href="global.html#Router">Router</a></li><li><a href="global.html#Sidenav">Sidenav</a></li><li><a href="global.html#SidenavButton">SidenavButton</a></li><li><a href="global.html#SwitchUser">SwitchUser</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Thu May 05 2022 02:34:55 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

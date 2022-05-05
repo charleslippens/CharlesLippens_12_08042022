@@ -14,7 +14,7 @@ import "../styling/barchart.css";
 /**
  * Display a Bar Chart with activity's datas from the API.
  * @param { Array } data
- * @return { HtmlElements } BarChart's component is displayed dynamically.
+ * @returns { HtmlElements } BarChart's component is displayed dynamically.
  */
 function BarChartActivity({ data }) {
 	const TranformDate = (tickItem) => {

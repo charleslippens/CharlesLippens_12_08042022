@@ -10,7 +10,7 @@ import SidenavButton from "./sidenavbutton.jsx";
 /**
  * Render the sidebar with buttons and copyright
  * @param
- * @return { HtmlElements } Sidenav
+ * @returns { HtmlElements } Sidenav
  */
 function Sidenav() {
 	return (

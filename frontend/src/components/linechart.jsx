@@ -5,7 +5,7 @@ import "../styling/linechart.css";
  * It Create a rectangle and circles when the dot, from the chart, is active.
  * @param {number} cx
  * @param {number} cy
- * @return { HtmlElements } Rectangle's component is displayed.
+ * @returns {HtmlElements} Rectangle's component is displayed.
  */
 function GreyArea({ cx, cy }) {
 	return (

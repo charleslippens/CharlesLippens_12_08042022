@@ -12,7 +12,7 @@ import "../styling/switchuser.css";
  * @param {array} optionLabels
  * @param {bool} small
  * @param {bool} disabled
- * @return { HtmlElements } Switch User button
+ * @returns { HtmlElements } Switch User button
  */
 const SwitchUser = ({ id, checked, onChange, name, optionLabels, small, disabled }) => {
 	function handleKeyPress(e) {

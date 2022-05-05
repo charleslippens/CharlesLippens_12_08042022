@@ -3,7 +3,6 @@ import User from "./user.jsx";
 export default class UserMapper {
 	/**
 	 * Convert received Json to new User type
-	 *
 	 * @param { object } json
 	 * @returns { new User }
 	 */

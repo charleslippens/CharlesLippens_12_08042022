@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 /**
  * Render a button with an image
  * @param {string } logo
- * @return { HtmlElements } Sidenavbutton
+ * @returns { HtmlElements } Sidenavbutton
  */
 function SidenavButton({ logo }) {
 	return (

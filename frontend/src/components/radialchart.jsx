@@ -5,7 +5,7 @@ import "../styling/radialchart.css";
 /**
  * Render a Radial Bar Chart using Recharts
  * @param {object} data
- * @return { HtmlElements } RadialChart
+ * @returns { HtmlElements } RadialChart
  */
 function RadialChart({ data }) {
 	let score = 0;

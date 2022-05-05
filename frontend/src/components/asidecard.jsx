@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
  * @param {string } subtitle
  * @param {string } classname
  * @param { string } logo
- * @return { HtmlElements } AsideBar's component is displayed dynamically.
+ * @returns { HtmlElements } AsideBar's component is displayed dynamically.
  */
 function AsideCard({ userKeyData, unit, subtitle, className, logo }) {
 	return (
