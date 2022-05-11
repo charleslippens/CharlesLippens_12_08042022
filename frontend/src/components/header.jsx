@@ -16,30 +16,15 @@ function Header() {
 				<img src={logo} alt="SportSee Logo" className="nav-logo" />
 			</Link>
 			<nav className="nav vertical-center">
-				<NavLink
-					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/"
-				>
-					Accueil
-				</NavLink>
+				<span className="nav-link">Accueil</span>
 				<NavLink
 					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
 					to="/profil"
 				>
 					Profil
 				</NavLink>
-				<NavLink
-					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/"
-				>
-					Réglage
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/"
-				>
-					Communauté
-				</NavLink>
+				<span className="nav-link">Réglage</span>
+				<span className="nav-link">Communauté</span>
 			</nav>
 		</header>
 	);
