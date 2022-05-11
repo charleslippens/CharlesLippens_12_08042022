@@ -46,7 +46,11 @@
 	justify-content: space-between;
 	order: 1;
 }
-
+.profil {
+	width: 830px;
+	margin: auto;
+	padding-left: 10px;
+}
 @media screen and (min-width: 1600px) {
 	.dashboard {
 		flex-direction: row;
@@ -66,15 +70,36 @@
 	.dashboard-charts-wrapper {
 		order: 1;
 	}
+	.profil {
+		margin: auto;
+		padding-left: 10px;
+	}
 }
 
 .small-card-wrapper {
+	width: 52.1875rem;
 	display: flex;
 	justify-content: space-between;
-	width: 52.1875rem;
 }
-.profil {
-	width: 830px;
-	margin: auto;
-	padding-left: 10px;
+.Nav-h {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	width: 100vw;
+	color: white;
+	background-color: black;
+}
+.Nav-h .logo {
+	height: 60%;
+	padding: 20px;
+}
+.Nav-h .nav-h {
+	display: flex;
+	justify-content: space-around;
+	flex: 1;
+}
+.Nav-h .nav-h .nav-h_menu {
+	font-size: 2vw;
+	font-weight: 500;
 }
