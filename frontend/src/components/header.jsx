@@ -5,9 +5,10 @@ import logo from "../assets/logo.svg";
 import "../styling/header.css";
 
 /**
- *
- *
- * @return {*}
+ * Render the Header with a logo and a navbar
+ * The user's profile page is determined by the SwitchUser state in the Context
+ * @param
+ * @returns { HtmlElements } Header
  */
 function Header() {
 	return (

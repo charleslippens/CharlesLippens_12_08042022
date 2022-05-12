@@ -28,6 +28,7 @@
 	margin-right: 0.5rem;
 }
 .ActvityTitle {
+	margin-top: 0.5rem;
 	position: absolute;
 	color: #20253a;
 	font-size: 0.9375rem;
@@ -45,4 +46,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.recharts-legend-item {
+	margin-right: 0 !important;
+	margin-left: 2rem;
 }

@@ -26,16 +26,21 @@
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
 	font-size: 0.87rem;
 }
+.dashboard-charts .recharts-wrapper {
+	width: 100% !important;
+}
 
 .dashboard-charts .recharts-surface {
 	margin-right: 0.75rem !important;
 	margin-left: 0 !important;
+	max-width: 100%;
 }
 
 .dashboard-charts div:first-child {
 	display: flex;
 }
 .dashboard-charts-wrapper {
+	width: 95%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -77,7 +82,7 @@
 }
 
 .small-card-wrapper {
-	width: 52.1875rem;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
