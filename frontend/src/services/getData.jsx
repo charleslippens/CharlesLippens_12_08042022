@@ -30,6 +30,7 @@ export const ApiFetch = ({ children }) => {
 					.json()
 					.then(({ data }) => {
 						setUser(UserMapper.convertToUser(data));
+						console.log(data);
 					})
 					.catch((error) => console.log(error))
 			);

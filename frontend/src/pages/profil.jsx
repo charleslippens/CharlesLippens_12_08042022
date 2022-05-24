@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "../styling/profil.css";
 /**
- *
- *
- * @return {*}
+ * Render Profil
+ * @param
+ * @returns { HtmlElements } Profil
  */
 function Profil() {
 	return (
