@@ -38,13 +38,13 @@
 .dashboard-charts-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	order: 1;
+	order: 2;
 }
 .dashboard-aside {
 	display: flex;
 	justify-content: space-between;
 	order: 2;
+	margin-top: 2rem;
 }
 .profil {
 	width: 830px;
@@ -59,6 +59,7 @@
 		display: block;
 		order: 2;
 		margin-left: 1.9375rem;
+		margin-top: 0;
 	}
 	.profil {
 		width: fit-content;
@@ -68,6 +69,7 @@
 		margin-bottom: 0;
 	}
 	.dashboard-charts-wrapper {
+		justify-content: space-between;
 		order: 1;
 	}
 	.profil {
@@ -80,7 +82,6 @@
 	width: 52.1875rem;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2.4375rem;
 }
 .Nav-h {
 	display: flex;

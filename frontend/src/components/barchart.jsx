@@ -63,7 +63,7 @@ function BarChartActivity({ data }) {
 						yAxisId="kilogram"
 						dataKey="kilogram"
 						orientation="right"
-						domain={["dataMin-2", "dataMax+2"]}
+						domain={["dataMin-2", "dataMax+1"]}
 						axisLine={false}
 						tickLine={false}
 						tickCount={3}
