@@ -11,8 +11,6 @@ function RadialChart({ data }) {
 	let score = 0;
 	if (data.todayScore) {
 		score = data.todayScore;
-	} else if (data.score) {
-		score = data.score;
 	}
 	const dataArray = [{ name: "score", value: score }];
 
@@ -39,10 +37,7 @@ function RadialChart({ data }) {
 				</RadialBarChart>
 			</ResponsiveContainer>
 			<div className="chartgoal-label">
-				<p className="percent">
-					{data.score && data.score * 100}
-					{data.todayScore && data.todayScore * 100}%
-				</p>
+				<p className="percent">{data.todayScore && data.todayScore * 100}%</p>
 				<p>de votre</p>
 				<p>objectif</p>
 			</div>

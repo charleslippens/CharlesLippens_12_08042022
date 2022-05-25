@@ -7,7 +7,7 @@ export default class User {
 		 * @param { string } firstName
 		 * @param { string } lastName
 		 * @param { number } age
-		 * @param { number } todayScore
+		 * @param { number } score
 		 * @param { number } calorieCount
 		 * @param { number } proteinCount
 		 * @param { number } carbohydrateCount
@@ -17,7 +17,7 @@ export default class User {
 		firstName,
 		lastName,
 		age,
-		todayScore,
+		score,
 		calorieCount,
 		proteinCount,
 		carbohydrateCount,
@@ -27,7 +27,7 @@ export default class User {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
-		this.todayScore = todayScore;
+		this.todayScore = score;
 		this.calorieCount = calorieCount;
 		this.proteinCount = proteinCount;
 		this.carbohydrateCount = carbohydrateCount;
