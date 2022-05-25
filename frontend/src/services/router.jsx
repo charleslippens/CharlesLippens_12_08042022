@@ -17,7 +17,7 @@ function Router() {
 				<Sidenav />
 				<Routes>
 					<Route path="/user/:userId" element={<Dashboard />} />
-					<Route path="/" element={<Navigate to="/user/12" replace />} />
+					<Route path="/" element={<Navigate to="/user/12/" replace />} />
 				</Routes>
 			</BrowserRouter>
 		</React.StrictMode>
