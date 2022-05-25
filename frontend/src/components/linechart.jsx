@@ -64,7 +64,7 @@ function LineChartAvgSessions({ data }) {
 						dataKey="sessionLength"
 						stroke="url(#colorUv)"
 						dot={false}
-						strokeWidth={2}
+						strokeWidth={2.3}
 						activeDot={GreyArea}
 					/>
 					<XAxis
