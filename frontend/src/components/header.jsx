@@ -18,12 +18,14 @@ function Header() {
 			</Link>
 			<nav className="nav vertical-center">
 				<span className="nav-link">Accueil</span>
-				<NavLink
-					className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-					to="/profil"
-				>
-					Profil
-				</NavLink>
+				<span className="nav-link">
+					<NavLink
+						className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
+						to="/profil"
+					>
+						Profil
+					</NavLink>
+				</span>
 				<span className="nav-link">Réglage</span>
 				<span className="nav-link">Communauté</span>
 			</nav>
