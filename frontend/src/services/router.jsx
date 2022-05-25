@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
@@ -9,10 +9,12 @@ import Sidenav from "../components/sidenav.jsx";
 import Dashboard from "../pages/dashboard.jsx";
 
 function Router() {
+	const [userId, setUserId] = useState(12);
+
 	return (
 		<React.StrictMode>
 			<BrowserRouter>
-				<Header />
+				<Header userId={userId} setUserId={setUserId} />
 				<Sidenav />
 				<Routes>
 					<Route exact path="/profil" element={<Profil />} />

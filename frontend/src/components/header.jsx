@@ -10,10 +10,13 @@ import "../styling/header.css";
  * @param
  * @returns { HtmlElements } Header
  */
-function Header() {
+function Header({ userId, setUserId }) {
+	function userToggle() {
+		userId === 12 ? setUserId(18) : setUserId(12);
+	}
 	return (
 		<header className="nav-wrapper">
-			<Link to="/">
+			<Link to={`/user/${userId}/`} onClick={userToggle}>
 				<img src={logo} alt="SportSee Logo" className="nav-logo" />
 			</Link>
 			<nav className="nav vertical-center">
@@ -21,7 +24,8 @@ function Header() {
 				<span className="nav-link">
 					<NavLink
 						className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
-						to="/profil"
+						to={`/user/${userId}/`}
+						onClick={userToggle}
 					>
 						Profil
 					</NavLink>
