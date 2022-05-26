@@ -1,4 +1,5 @@
-https://forthebadge.com/images/badges/made-with-javascript.svg
+[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
+[![forthebadge](./made-with-recharts.svg)](https://recharts.org/en-US/)
 
 # 1. Project: installation steps
 
