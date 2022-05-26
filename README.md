@@ -11,15 +11,15 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## 1.1.2 Dependencies
 
-- React Version 18.0.0
+- React: Version 17.0.2
 
-- React-router-dom 6.3.0
+- React-router-dom: 6.3.0
 
-- Recharts 2.1.9
+- Recharts: 2.1.9
 
-- Prop-types 15.8.1
+- Prop-types: 15.8.1
 
-- JSDoc ( to generate API documentation) 3.6.10
+- JSDoc: 3.6.10
 
 
 ## 1.2 Clone or download P12 repository
