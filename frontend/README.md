@@ -1,3 +1,5 @@
+[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
+[![forthebadge](./made-with-recharts.svg)](https://recharts.org/en-US/)
 
 # 1. Project: installation steps
 
@@ -10,15 +12,16 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## 1.1.2 Dependencies
 
-- React: Version 17.0.2
+- [React](https://reactjs.org): Version 17.0.2
 
-- React-router-dom: 6.3.0
+- [React-router-dom](https://reactrouter.com/): Version 6.3.0
 
-- Recharts: 2.1.9
+- [Recharts](https://recharts.org/): Version 2.1.4
 
-- Prop-types: 15.8.1
+- [Prop-types](https://www.npmjs.com/package/prop-types):  Version 15.8.1
 
-- JSDoc: 3.6.10
+- [JSDoc](https://jsdoc.app/):  Version 3.6.10
+
 
 
 ## 1.2 Clone or download P12 repository
