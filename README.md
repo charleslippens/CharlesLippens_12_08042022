@@ -1,3 +1,5 @@
+![P12- SportSee](https://github.com/charleslippens/CharlesLippens_12_08042022/blob/main/frontend/src/assets/logo.svg)
+
 [![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
 [![forthebadge](./made-with-recharts.svg)](https://recharts.org/en-US/)
 
