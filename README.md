@@ -1,4 +1,4 @@
-[![forthebadge]([./made-with-create-react-app.svg)](https://i.gyazo.com/4b1f99f45ae299067191b63b588edbf1.png)](https://create-react-app.dev/)
+[![forthebadge](https://i.gyazo.com/4b1f99f45ae299067191b63b588edbf1.png)(https://create-react-app.dev/)
 [![forthebadge](./uses-recharts.svg)](https://recharts.org/en-US/)
 
 # 1. Project: installation steps
