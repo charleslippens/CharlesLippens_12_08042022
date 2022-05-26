@@ -20,7 +20,7 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 - [Prop-types](https://www.npmjs.com/package/prop-types):  Version 15.8.1
 
-- [JSDoc](https://jsdoc.app/)):  Version 3.6.10
+- [JSDoc](https://jsdoc.app/):  Version 3.6.10
 
 
 
