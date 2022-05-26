@@ -1,5 +1,5 @@
-[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
-[![forthebadge](./made-with-recharts.svg)](https://recharts.org/en-US/)
+[![forthebadge](../made-with-create-react-app.svg)](https://create-react-app.dev/)
+[![forthebadge](../made-with-recharts.svg)](https://recharts.org/en-US/)
 
 # 1. Project: installation steps
 
