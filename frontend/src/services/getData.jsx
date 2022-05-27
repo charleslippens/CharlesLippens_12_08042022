@@ -13,7 +13,6 @@ export const Context = createContext();
  * @returns { HtmlElements} returning the Context.Provider with the value of the state and the setState functions
  */
 export const ApiFetch = ({ children }) => {
-	const [userSwitch, setUserSwitch] = useState(false);
 	const [userId, setUserId] = useState(null);
 	const [user, setUser] = useState(null);
 	const [activity, setActivity] = useState(null);
@@ -70,8 +69,6 @@ export const ApiFetch = ({ children }) => {
 	return (
 		<Context.Provider
 			value={{
-				userSwitch,
-				setUserSwitch,
 				userId,
 				setUserId,
 				user,
