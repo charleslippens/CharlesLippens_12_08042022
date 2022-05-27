@@ -17,7 +17,7 @@ export default class User {
 		firstName,
 		lastName,
 		age,
-		score,
+		todayScore,
 		calorieCount,
 		proteinCount,
 		carbohydrateCount,
@@ -27,7 +27,7 @@ export default class User {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
-		this.todayScore = score;
+		this.todayScore = todayScore;
 		this.calorieCount = calorieCount;
 		this.proteinCount = proteinCount;
 		this.carbohydrateCount = carbohydrateCount;
