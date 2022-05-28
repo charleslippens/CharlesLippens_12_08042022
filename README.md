@@ -3,6 +3,13 @@
 [![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
 [![forthebadge](./made-with-recharts.svg)](https://recharts.org/en-US/)
 
+## Description
+
+SportSee is a startup dedicated to sport's coaching. The purpose of this project is to developp a brand new Dashboard's version of their application, where the user can check any important data about his sport's practice.
+
+Create the consumer-facing dashboard of a sports analytics platform. Build graphs and charts with React and use an API to fetch data.
+
+
 # 1. Project: installation steps
 
 ## 1.1.1 Prerequisites
